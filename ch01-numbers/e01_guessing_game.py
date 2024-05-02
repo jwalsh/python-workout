@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Solution to chapter 1, exercise 1: Guessing game"""
 import random
+from typing import List
+import click 
 
+@click.command()
 
 def guessing_game():
     """Generate a random integer from 1 to 100.
@@ -23,3 +26,7 @@ Until they guess correctly, tell them to guess higher or lower.
 
         else:
             print(f'Your guess of {user_guess} is too high!')
+
+
+if __name__ == '__main__':
+    guessing_game()
